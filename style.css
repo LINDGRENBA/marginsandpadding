@@ -1,0 +1,60 @@
+/* note from W3schools
+auto - browser calculates the margin
+length - margin is specified in px, pt, cm, etc
+% - margin is specified in % of the width of the containing element
+inherit - margin is specified based on the parent element */
+
+.box {
+  height: 100px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  border: 1px solid black;
+}
+
+.one {
+  background-color: #FFBD33;
+  margin: 100px;
+  /* box one is as large as box two (or in other words, bot divs take up the same amount of space), but because it creates the additional 100px outside of the div, it appears as white space */
+}
+
+.two {
+  background-color: #33FFBD;
+  padding: 100px;
+}
+
+.three {
+background-color: #FF33A1;
+margin: 50px auto;
+}
+
+.four {
+  background-color: #33A1FF;
+  padding: 100px;
+  margin-left: -100px;
+}
+
+/* margin pushes things away from it, from the outside of the box/content
+margin shorthand - four = Top Right Bottom Left
+                   three =  Top Right/Left Bottom
+                   two - Top/Bottom Right/Left
+                   one - All four sides
+*/
+
+/* Padding adds space within the box/content
+padding shorthand - same as Margin
+*/
+
+/* MARGIN, PADDING AND BORDER ADD TO THE SIZE OF THE CONTENT, CAN BREAK YOUR LAYOUT IF THEY CHANGE */
+
+/* Using AUTO to center -
+margin-left means make the margin on the left as big as possible - take up as much space as you can
+
+TO CENTER HORIZONTALLY
+margin-right: auto;
+margin-left: auto;
+
+Can't do this with top/bottom because CSS specs specify if the margin top or bottom is set to auto, it will calculate it as Zero
+- so you often see margin: 0 auto;
+*/
